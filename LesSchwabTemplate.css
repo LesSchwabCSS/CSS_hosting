@@ -92,6 +92,7 @@
         border: 0px;
         margin-top: 0;
         padding-bottom: var(--set_padding);
+        display: none;
     }
 
     h1, h3 {
