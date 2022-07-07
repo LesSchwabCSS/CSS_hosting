@@ -121,4 +121,5 @@
         padding-left: var(--set_list_padding);
         padding-bottom: var(--set_padding);
         left: 10px;
+        list-style-position: outside;
     }
