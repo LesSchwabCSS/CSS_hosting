@@ -24,9 +24,8 @@
    |- quotes ("") = They are used when you want to define the variable literally. 11pt out of quotes is a size,  |
    |    but if it is put in quotes, it is just the term 11pt.                                                    |           
    |_____________________________________________________________________________________________________________|*/
-
+    
     :root {
-        --logo: url(LesSchwabLogo.png);
         --image_width: 310px; /* will not change logo size */
         --image_border: 1px solid black;
         --table_border: 1px solid black;
@@ -93,7 +92,6 @@
         border: 0px;
         margin-top: 0;
         padding-bottom: var(--set_padding);
-        background-image: var(--logo);
     }
 
     h1, h3 {
