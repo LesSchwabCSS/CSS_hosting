@@ -120,6 +120,6 @@
     ol {
         padding-left: var(--set_list_padding);
         padding-bottom: var(--set_padding);
-        left: 10px;
+        left: 40px;
         list-style-position: outside;
     }
