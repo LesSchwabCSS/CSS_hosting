@@ -36,6 +36,7 @@
         --table_width: 640px;
         --paragraph_width: 600px;
         --set_padding: 5px;
+        --set_list_padding: 15px;
         --header_text_decoration: none;
         --table_header_background: LightGray; /* should be LightGray or none */
       }
@@ -117,7 +118,7 @@
 
     li,
     ol {
-        padding-left: var(--padding);
-        padding-bottom: var(--padding);
+        padding-left: var(--set_list_padding);
+        padding-bottom: var(--set_padding);
         left: 10px;
     }
