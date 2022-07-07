@@ -36,7 +36,7 @@
         --table_width: 640px;
         --paragraph_width: 600px;
         --set_padding: 5px;
-        --set_list_padding: 15px;
+        --set_list_padding: 20px;
         --header_text_decoration: none;
         --table_header_background: LightGray; /* should be LightGray or none */
       }
