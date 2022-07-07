@@ -60,7 +60,7 @@
         background-color: var(--table_header_background);
         font-weight: bold;
         text-align: left;
-        padding-left: var(--set_padding);
+        padding: var(--set_padding);
     }
 
     div {
@@ -109,7 +109,8 @@
     table,
     p,
     td,
-    li {
+    li,
+    a {
         font-size: var(--body_font_size);
         font-family: var(--font_type);
         max-width: var(--paragraph_width);
