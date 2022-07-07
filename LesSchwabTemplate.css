@@ -1,0 +1,123 @@
+/* All of these variables will set the defined value across the document 
+    (i.e: changing font_type will change the font type of everything in the document 
+    
+
+    
+    TERMS KEY:
+    _____________________________________________________________________________________________________________
+   |- px = number of pixels (The average screen is 1920 pixels wide)                                             |
+   |                                                                                                             |
+   |- pt = size of font (Products like Microsoft Word and Google Docs allow you to choose                        |
+   |    what point/size your font is)                                                                            |           
+   |                                                                                                             |   
+   |- #cc0000 = a hexcode. A hexcode is a six character representation of a color value.                         |
+   |    All colors have a specific hexcode that differentiates them from others                                  |
+   |    (https://www.color-hex.com/ is a website that will convert a selected color into its specific hexcode)   |
+   |    If the color you want to use is simple like black, white, or yellow, you can just type the name of       |
+   |    the color in place of the hexcode (look at image_border and table_border)                                |
+   |                                                                                                             |
+   |- semicolon (;) = They are the way the program knows that the statement is being terminated. Leaving         |
+   |    out the semicolon would cause everything below that line to stop functioning correctly.                  |
+   |                                                                                                             |
+   |- colon (:) = Definition of a term. This is how a variable has its value set. Similar to equals.             |
+   |                                                                                                             |                   
+   |- quotes ("") = They are used when you want to define the variable literally. 11pt out of quotes is a size,  |
+   |    but if it is put in quotes, it is just the term 11pt.                                                    |           
+   |_____________________________________________________________________________________________________________|*/
+    
+    :root {
+        --image_width: 310px; /* will not change logo size */
+        --image_border: 1px solid black;
+        --table_border: 1px solid black;
+        --heading_font_size: 14pt;
+        --body_font_size: 11pt;
+        --font_type: "Roboto";
+        --revision_text_color: #cc0000;
+        --table_width: 640px;
+        --paragraph_width: 600px;
+        --set_padding: 5px;
+        --header_text_decoration: none;
+        --table_header_background: LightGray; /* should be LightGray or none */
+      }
+    
+      /***********************************No Need to View the Mess Below***********************************/
+    img {
+        width: var(--image_width) !important;
+        height: auto !important;
+        border: var(--image_border);
+        margin-bottom: 0;
+        display: table-cell;
+    }
+    /* The Revised line will be dark red, italicized, and bold */
+    .revision {
+        color: var(--revision_text_color);
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    th {
+        background-color: var(--table_header_background);
+        font-weight: bold;
+        text-align: left;
+        padding-left: var(--set_padding);
+    }
+
+    div {
+        text-align: left;
+    }
+
+    table {
+        width: var(--table_width);
+        border-collapse: collapse;
+    }
+
+    table,
+    td {
+        padding: var(--set_padding);
+        border: var(--table_border);
+        vertical-align: top;
+    }
+
+    tbody {
+        padding: var(--set_padding);
+        padding-top: 0;
+    }
+
+    /* Handles placement and size of Les Schwab logo  */
+    .logo {
+        float: left;
+        width: 170px !important;
+        height: 48px !important;
+        border: 0px;
+        margin-top: 0;
+        padding-bottom: var(--set_padding);
+    }
+
+    h1, h3 {
+        font-size: var(--heading_font_size);
+        font-weight: bold;
+        text-decoration: var(--header_text_decoration);
+        font-family: var(--font_type);
+    }
+
+    .borderless {
+        border: 0px !important;
+    }
+
+    /* Sets the font type and size of all of the content found outside of the titles */
+    table,
+    p,
+    td,
+    li {
+        font-size: var(--body_font_size);
+        font-family: var(--font_type);
+        max-width: var(--paragraph_width);
+        word-wrap: break-word;
+    }
+
+    li,
+    ol {
+        padding-left: var(--padding);
+        padding-bottom: var(--padding);
+        left: 10px;
+    }
