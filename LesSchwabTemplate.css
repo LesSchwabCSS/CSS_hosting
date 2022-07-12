@@ -39,6 +39,7 @@
         --set_list_padding: 20px;
         --header_text_decoration: none;
         --table_header_background: LightGray; /* should be LightGray or none */
+        --header_font_style: Italic;
       }
     
       /***********************************No Need to View the Mess Below***********************************/
@@ -106,6 +107,7 @@
         font-weight: bold;
         text-decoration: var(--header_text_decoration);
         font-family: var(--font_type);
+        font-style: var(--header_font_style);
     }
 
     .borderless {
