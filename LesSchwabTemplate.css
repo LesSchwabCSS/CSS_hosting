@@ -109,13 +109,7 @@
     }
 
     /* Sets the font type and size of all of the content found outside of the titles */
-    table,
-    p,
-    td,
-    li,
-    a, 
-    div,
-    th {
+    * {
         font-size: var(--body_font_size);
         font-family: var(--font_type);
         max-width: var(--paragraph_width);
