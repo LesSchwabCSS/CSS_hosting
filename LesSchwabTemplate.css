@@ -114,7 +114,8 @@
     td,
     li,
     a, 
-    div {
+    div,
+    th {
         font-size: var(--body_font_size);
         font-family: var(--font_type);
         max-width: var(--paragraph_width);
