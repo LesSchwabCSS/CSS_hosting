@@ -80,6 +80,10 @@
         vertical-align: top;
     }
 
+    th, td, table, tbody {
+        height: auto;
+    }
+
     tbody {
         padding: var(--set_padding);
         padding-top: 0;
