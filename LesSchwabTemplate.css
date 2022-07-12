@@ -94,6 +94,7 @@
         margin-top: 0;
         padding-bottom: var(--set_padding);
         display: none;
+        padding-right: 100%;
     }
 
     h1, h3 {
