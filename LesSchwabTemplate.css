@@ -125,3 +125,7 @@
         left: 40px;
         list-style-position: outside;
     }
+
+    .bordered {
+        --table_border: 1px solid black !important;
+   }
