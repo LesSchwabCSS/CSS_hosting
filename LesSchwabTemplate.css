@@ -133,3 +133,10 @@
    .borderless {
         --table_border: 0px solid black !important;
    }
+
+   .rating-star.icon-star-empty, .kb-article-view-count, .snc-article-header-number-readonly {
+        display: none;
+        position: absolute !important;
+        top: 0;
+        right: 0;
+   }
