@@ -81,7 +81,7 @@
         vertical-align: top;
     }
 
-    th, td, table, tbody {
+    th, td, table, tbody, tr {
         height: auto;
     }
 
