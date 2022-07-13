@@ -129,3 +129,7 @@
     .bordered {
         --table_border: 1px solid black !important;
    }
+
+   .borderless {
+        --table_border: 0px solid black !important;
+   }
