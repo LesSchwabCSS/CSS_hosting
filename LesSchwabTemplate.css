@@ -82,7 +82,7 @@
     }
 
     th, td, table, tbody, tr {
-        height: auto;
+        height: auto !important;
     }
 
     tbody {
