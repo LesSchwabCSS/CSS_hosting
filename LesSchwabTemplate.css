@@ -134,9 +134,9 @@
         --table_border: 0px solid black !important;
    }
 
-   .rating-star.icon-star-empty, .kb-article-view-count, .snc-article-header-number-readonly {
-        display: none;
+   .rating-star.icon-star-empty, .kb-article-view-count, .snc-article-header-number-readonly, #articleStarRatingGroup {
+        display: none !important;
         position: absolute !important;
-        top: 0;
-        right: 0;
+        bottom: 0 !important;
+        right: 0 !important;
    }
