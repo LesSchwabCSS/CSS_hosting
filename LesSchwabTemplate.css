@@ -110,10 +110,6 @@
         font-style: var(--header_font_style);
     }
 
-    .borderless {
-        border: 0px !important;
-    }
-
     /* Sets the font type and size of all of the content found outside of the titles */
     * :not(h1, h3){
         font-size: var(--body_font_size);
