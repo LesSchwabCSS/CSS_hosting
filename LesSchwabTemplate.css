@@ -140,3 +140,9 @@
         bottom: 0 !important;
         right: 0 !important;
    }
+
+   #articleTitleReadonly {
+        --font_type: "Oswald" !important;
+        --header_text_decoration: none !important;
+        font-size: 24pt !important;
+   }
