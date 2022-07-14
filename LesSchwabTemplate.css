@@ -142,7 +142,11 @@
    }
 
    #articleTitleReadonly {
-        --font_type: "Oswald" !important;
-        --header_text_decoration: none !important;
-        font-size: 24pt !important;
+    --font_type: "Oswald" !important;
+    --header_text_decoration: none !important;
+    font-size: 24pt !important;
+    border-bottom: 5px solid black;
+    padding-bottom: 10px !important;
+    font-weight: none !important;
+    --header_font_style: none !important;
    }
