@@ -147,6 +147,6 @@
     font-size: 24pt !important;
     border-bottom: 5px solid black;
     padding-bottom: 10px !important;
-    font-weight: none !important;
+    font-weight: normal !important;
     --header_font_style: none !important;
    }
