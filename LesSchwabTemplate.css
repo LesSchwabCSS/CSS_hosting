@@ -84,6 +84,7 @@
 
     th, td, table, tbody, tr {
         height: auto !important;
+        width: auto !important;
     }
 
     tbody {
