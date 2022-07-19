@@ -29,9 +29,9 @@
         --image_width: 310px; /* will not change logo size */
         --image_border: 1px solid black;
         --table_border: 1px solid black;
-        --heading_font_size: 15pt;
-        --body_font_size: 13pt;
-        --font_type: "Roboto";
+        --heading_font_size: 15pt !important;
+        --body_font_size: 13pt !important;
+        --font_type: "Roboto" !important;
         --revision_text_color: #cc0000;
         --table_width: 750px;
         --paragraph_width: 750px;
