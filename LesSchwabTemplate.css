@@ -82,10 +82,9 @@
         vertical-align: top;
     }
 
-    /* th, td, table, tbody, tr {
+    tr {
         height: auto !important;
-        width: auto !important;
-    } */
+    }
 
     tbody {
         padding: var(--set_padding);
