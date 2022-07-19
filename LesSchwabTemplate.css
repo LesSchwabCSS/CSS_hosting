@@ -114,9 +114,9 @@
 
     /* Sets the font type and size of all of the content found outside of the titles */
     * :not(h1, h3, .row.navbar.navbar-default.snc-article-header-toolbar, .snc-article-header-author){
-        font-size: var(--body_font_size);
-        font-family: var(--font_type);
-        max-width: var(--paragraph_width);
+        font-size: var(--body_font_size) !important;
+        font-family: var(--font_type) !important;
+        max-width: var(--paragraph_width) !important;
         word-wrap: break-word;
     }
 
