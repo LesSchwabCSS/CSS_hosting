@@ -160,3 +160,7 @@
     display: inline !important; 
     border: 0px solid black !important;
    }
+
+    td {
+        width: auto !important;
+    }
