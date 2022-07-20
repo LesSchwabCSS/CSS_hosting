@@ -164,3 +164,7 @@
     td {
         width: auto !important;
     }
+        
+    th:nth-child(n+2), td:nth-child(n+2) {
+        padding-left: 2rem;
+    }
