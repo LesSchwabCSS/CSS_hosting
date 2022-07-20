@@ -82,7 +82,8 @@
         vertical-align: top;
     }
 
-    tr {
+    tr,
+    td {
         height: auto !important;
     }
 
