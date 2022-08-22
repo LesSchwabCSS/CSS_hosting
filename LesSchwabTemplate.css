@@ -25,146 +25,150 @@
    |    but if it is put in quotes, it is just the term 11pt.                                                    |           
    |_____________________________________________________________________________________________________________|*/
     
-    :root {
-        --image_width: 310px; /* will not change logo size */
-        --image_border: 1px solid black;
-        --table_border: 1px solid black;
-        --heading_font_size: 15pt !important;
-        --body_font_size: 13pt !important;
-        --font_type: "Roboto" !important;
-        --revision_text_color: #cc0000;
-        --table_width: 750px;
-        --paragraph_width: 750px;
-        --set_padding: 5px;
-        --set_list_padding: 20px;
-        --header_text_decoration: none;
-        --table_header_background: LightGray; /* should be LightGray or none */
-        --header_font_style: Italic;
-        --mini_icons_width: 20px;
-      }
+   :root {
+    --image_width: 310px; /* will not change logo size */
+    --image_border: 1px solid black;
+    --table_border: 1px solid black;
+    --heading_font_size: 15pt !important;
+    --body_font_size: 13pt !important;
+    --font_type: "Roboto" !important;
+    --revision_text_color: #cc0000;
+    --table_width: 750px;
+    --paragraph_width: 750px;
+    --set_padding: 5px;
+    --set_list_padding: 20px;
+    --header_text_decoration: none;
+    --table_header_background: LightGray; /* should be LightGray or none */
+    --header_font_style: Italic;
+    --mini_icons_width: 20px;
+  }
+
+  /***********************************No Need to View the Mess Below***********************************/
+img {
+    width: var(--image_width) !important;
+    height: auto !important;
+    border: var(--image_border);
+    margin-bottom: 0;
+    display: table-cell;
+}
+/* The Revised line will be dark red, italicized, and bold */
+.revision {
+    color: var(--revision_text_color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+th {
+    background-color: var(--table_header_background);
+    font-weight: bold;
+    text-align: left;
+    padding: var(--set_padding);
+    border: var(--table_border);
+}
+
+div {
+    text-align: left;
+}
+
+table {
+    width: var(--table_width);
+    border-collapse: collapse;
+}
+
+table,
+td {
+    padding: var(--set_padding);
+    border: var(--table_border);
+    vertical-align: top;
+}
+
+tr,
+td,
+table,
+tbody {
+    height: auto !important;
+}
+
+tbody {
+    padding: var(--set_padding);
+    padding-top: 0;
+}
+
+/* Handles placement and size of Les Schwab logo  */
+.logo {
+    float: left;
+    width: 170px !important;
+    height: 48px !important;
+    border: 0px;
+    margin-top: 0;
+    padding-bottom: var(--set_padding);
+    display: none;
+    padding-right: 100%;
+}
+
+h1, h3 {
+    font-size: var(--heading_font_size) !important;
+    font-weight: bold;
+    text-decoration: var(--header_text_decoration);
+    font-family: var(--font_type);
+    font-style: var(--header_font_style);
+}
+
+/* Sets the font type and size of all of the content found outside of the titles */
+* :not(h1, h3, strong, em, u, .row.navbar.navbar-default.snc-article-header-toolbar, .snc-article-header-author){
+    font-size: var(--body_font_size) !important;
+    font-family: var(--font_type) !important;
+    max-width: var(--paragraph_width) !important;
+    word-wrap: break-word;
+}
+
+li,
+ol {
+    padding-left: var(--set_list_padding);
+    padding-bottom: var(--set_padding);
+    left: 40px;
+    list-style-position: outside;
+}
+
+.bordered {
+    --table_border: 1px solid black !important;
+}
+
+.borderless {
+    --table_border: 0px solid black !important;
+}
+
+.rating-star.icon-star-empty, .kb-article-view-count, .snc-article-header-number-readonly, #articleStarRatingGroup {
+    display: none !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+#articleTitleReadonly {
+--font_type: "Oswald" !important;
+--header_text_decoration: none !important;
+font-size: 24pt !important;
+border-bottom: 5px solid black;
+padding-bottom: 10px !important;
+font-weight: normal !important;
+--header_font_style: none !important;
+}
+
+.mini_icons {
+width: var(--mini_icons_width) !important; 
+display: inline !important; 
+border: 0px solid black !important;
+}
+
+td {
+    width: auto !important;
+}
     
-      /***********************************No Need to View the Mess Below***********************************/
-    img {
-        width: var(--image_width) !important;
-        height: auto !important;
-        border: var(--image_border);
-        margin-bottom: 0;
-        display: table-cell;
-    }
-    /* The Revised line will be dark red, italicized, and bold */
-    .revision {
-        color: var(--revision_text_color);
-        font-weight: bold;
-        font-style: italic;
-    }
+td:nth-child(n+2) {
+    padding-left: 2rem;
+}
 
-    th {
-        background-color: var(--table_header_background);
-        font-weight: bold;
-        text-align: left;
-        padding: var(--set_padding);
-        border: var(--table_border);
-    }
-
-    div {
-        text-align: left;
-    }
-
-    table {
-        width: var(--table_width);
-        border-collapse: collapse;
-    }
-
-    table,
-    td {
-        padding: var(--set_padding);
-        border: var(--table_border);
-        vertical-align: top;
-    }
-
-    tr,
-    td,
-    table,
-    tbody {
-        height: auto !important;
-    }
-
-    tbody {
-        padding: var(--set_padding);
-        padding-top: 0;
-    }
-
-    /* Handles placement and size of Les Schwab logo  */
-    .logo {
-        float: left;
-        width: 170px !important;
-        height: 48px !important;
-        border: 0px;
-        margin-top: 0;
-        padding-bottom: var(--set_padding);
-        display: none;
-        padding-right: 100%;
-    }
-
-    h1, h3 {
-        font-size: var(--heading_font_size) !important;
-        font-weight: bold;
-        text-decoration: var(--header_text_decoration);
-        font-family: var(--font_type);
-        font-style: var(--header_font_style);
-    }
-
-    /* Sets the font type and size of all of the content found outside of the titles */
-    * :not(h1, h3, strong, em, u, .row.navbar.navbar-default.snc-article-header-toolbar, .snc-article-header-author){
-        font-size: var(--body_font_size) !important;
-        font-family: var(--font_type) !important;
-        max-width: var(--paragraph_width) !important;
-        word-wrap: break-word;
-    }
-
-    li,
-    ol {
-        padding-left: var(--set_list_padding);
-        padding-bottom: var(--set_padding);
-        left: 40px;
-        list-style-position: outside;
-    }
-
-    .bordered {
-        --table_border: 1px solid black !important;
-   }
-
-   .borderless {
-        --table_border: 0px solid black !important;
-   }
-
-   .rating-star.icon-star-empty, .kb-article-view-count, .snc-article-header-number-readonly, #articleStarRatingGroup {
-        display: none !important;
-        position: absolute !important;
-        bottom: 0 !important;
-        right: 0 !important;
-   }
-
-   #articleTitleReadonly {
-    --font_type: "Oswald" !important;
-    --header_text_decoration: none !important;
-    font-size: 24pt !important;
-    border-bottom: 5px solid black;
-    padding-bottom: 10px !important;
-    font-weight: normal !important;
-    --header_font_style: none !important;
-   }
-
-   .mini_icons {
-    width: var(--mini_icons_width) !important; 
-    display: inline !important; 
-    border: 0px solid black !important;
-   }
-
-    td {
-        width: auto !important;
-    }
-        
-    td:nth-child(n+2) {
-        padding-left: 2rem;
-    }
+a {
+    color: #446CCF;
+}
